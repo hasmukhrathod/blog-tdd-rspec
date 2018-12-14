@@ -2,6 +2,11 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
 
+
+require 'spec_helper'
+require 'simplecov'
+require 'capybara/rspec'
+require 'webmock/rspec'
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all

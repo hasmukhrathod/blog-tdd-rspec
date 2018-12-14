@@ -40,6 +40,15 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 3.8'
+  gem 'factory_bot_rails'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  gem 'database_cleaner'
+  gem 'guard'
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  gem 'rails-controller-testing' # If you are using Rails 5.x
+  gem 'simplecov', require: false, group: :test
+  gem 'webmock'
+
 end
 
 group :development do
