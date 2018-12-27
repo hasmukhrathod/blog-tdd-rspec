@@ -43,10 +43,11 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   gem 'database_cleaner'
-  gem 'guard'
+  gem 'guard-rspec'
   gem 'shoulda-matchers', '4.0.0.rc1'
   gem 'rails-controller-testing' # If you are using Rails 5.x
-  gem 'simplecov', require: false, group: :test
+  gem 'simplecov'
+  gem 'simplecov-console'
   gem 'webmock'
 
 end
